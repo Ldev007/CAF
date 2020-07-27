@@ -51,19 +51,17 @@ class _HomePageState extends State<HomePage> {
                       selections[2] = false;
                       selections[3] = false;
                       selections[4] = false;
-                    } else if(index == 2){
+                    } else if (index == 2) {
                       selections[0] = false;
                       selections[1] = false;
                       selections[3] = false;
                       selections[4] = false;
-                    }
-                    else if(index == 3){
+                    } else if (index == 3) {
                       selections[0] = false;
                       selections[1] = false;
                       selections[2] = false;
                       selections[4] = false;
-                    }
-                    else{
+                    } else {
                       selections[0] = false;
                       selections[1] = false;
                       selections[2] = false;
@@ -89,18 +87,24 @@ class _HomePageState extends State<HomePage> {
                   ),
                   IconButton(
                     onPressed: null,
-                    icon: Icon(Icons.add, color: Colors.white,),
+                    icon: Icon(
+                      Icons.add,
+                      color: Colors.white,
+                    ),
                   ),
                   IconButton(
-                    onPressed: () => Navigator.pushNamed(context, '/profile_page'),
+                    onPressed: () =>
+                        Navigator.pushNamed(context, '/profile_page'),
                     icon: Icon(
                       Icons.account_circle,
                       color: Colors.white,
                     ),
                   ),
                   IconButton(
-                    onPressed: null,
-                    icon: Icon(Icons.trip_origin, color: Colors.white,
+                    onPressed: () => Navigator.pushNamed(context, '/tracker'),
+                    icon: Icon(
+                      Icons.trip_origin,
+                      color: Colors.white,
                     ),
                   ),
                 ],

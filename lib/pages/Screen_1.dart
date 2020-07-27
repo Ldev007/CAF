@@ -168,6 +168,11 @@ class _ScreenOneState extends State<ScreenOne> {
                     ],
                   ),
                 ),
+                //TEMPORARY BUTTON FOR DIRECT NAVIGATION
+                RaisedButton(
+                  padding: EdgeInsets.symmetric(horizontal: 100, vertical: 50),
+                  onPressed: (){Navigator.pushNamed(context, "/profile_page");},
+                ),
               ],
             ),
           ),
